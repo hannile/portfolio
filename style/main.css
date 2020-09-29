@@ -1,0 +1,129 @@
+@import "_reset.css";
+
+body {
+    font-family: sans-serif, helvetica; 
+    color: black;
+    font-size: 1em;
+
+}
+
+main {
+    font-family: sans-serif, helvetica; 
+    color: black;
+    font-size: 1em;
+}
+
+header {
+    display: inline-flex;
+    margin: 5px;
+    padding-bottom: 80%;
+    position: absolute fixed;
+}
+
+a {
+    display: inline-flex;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover  {
+    filter: blur(5px);
+    color: chartreuse;
+    
+}
+
+
+a:hover.projekthead  {
+    color: black;
+    filter: none;
+}
+
+
+/* js */
+.click {
+    cursor: pointer;
+}
+
+
+/*navigation*/
+
+.headers {
+    width: 100%;
+    display:flex;
+    align-items: flex-start;
+}
+
+.projects {
+    display: inline-flex;
+}
+
+
+/* new jquery header*/
+.project {
+    width: 100%;
+}
+
+.project-item {
+    display: none;
+}
+
+.project-item.is-visible {
+    display: block;
+}
+
+.content {
+    min-height: 100vh;
+}
+
+.list {
+    display:flex;
+    flex-wrap: wrap;
+    bottom: 10px;
+    margin-top: 1em;
+    position: fixed;
+}
+
+/*projects*/
+
+.nr {
+    padding-left: 5px;
+    width: 5%;
+}
+
+.title {
+    text-align: left;
+    width: 30%;
+}
+
+.description {
+    width: 40%;
+}
+
+.year {
+    /* padding-left: 31em; */
+    /* margin-right: 5px; */
+    width: 25%;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.images {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 0 5px;
+}
+
+.first {
+   padding-top: 800px;
+}
+
+.last {
+    padding-bottom: 8em;
+}
+
+.stick {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: -3;
+}
